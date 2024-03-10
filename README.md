@@ -17,4 +17,8 @@ In such a case, there might not be a feasible solution (Here, feasible solution 
 In terms of a SLAM or Structure from Motion algorithm, the camera poses is not known accuratly. Hence, the camera poses are also corrupted. I visualize the noisy camera poses with red. 
 ![Noisy Camera Poses](https://github.com/HaktanM/unscented_traingulation/blob/main/figures/cam_pose_noisy.png)
 
-We can s
+We can see that in every step, the estimation gets wors (the green dot is the groundtruth). The goal is to estimate how much we deviate from the groundtruth.
+
+# Unscented Transform
+You can refer to [Unscented Transform](https://groups.seas.harvard.edu/courses/cs281/papers/unscented.pdf) for a detailed descussion. Unscented transform leads to sigma points (orange dots).
+![Unscented Transform](https://github.com/HaktanM/unscented_traingulation/blob/main/figures/sigma_points.png)
